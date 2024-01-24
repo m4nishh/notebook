@@ -34,7 +34,7 @@ public class UserController {
         return RestResponse.of(response,"user created", RestAPICode.OK_STATUS_CODE);
     }
 
-    public RestResponse<> login(){
-
-    }
+//    public RestResponse<> login(){
+//
+//    }
 }

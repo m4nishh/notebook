@@ -36,7 +36,7 @@ public class UserServiceImpl implements IUserService {
         return null;
     }
     public Boolean isUserCreated(String email) {
-        return Optional.ofNullable(loginsRepo.findByEmail(email))
+        return Optional.of(loginsRepo.findByEmail(email))
                 .map(Logins::getEmail)
                 .filter(emailId -> !email.isEmpty())
                 .isPresent();

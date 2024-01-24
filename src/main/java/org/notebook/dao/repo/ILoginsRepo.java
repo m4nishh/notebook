@@ -79,8 +79,6 @@ public interface ILoginsRepo extends MongoRepository<Logins, String> {
     @Override
     <S extends Logins> boolean exists(Example<S> example);
 
-    @Override
-    <S extends Logins, R> R findBy(Example<S> example, Function<FluentQuery.FetchableFluentQuery<S>, R> queryFunction);
 
     public Logins findByEmail(String email);
 }
